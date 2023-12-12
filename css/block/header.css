@@ -1,0 +1,49 @@
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    margin: 16px 0 16px 0;
+}
+
+.navigation__item-link {
+    font-weight: 300;
+    color: var(--black, #000);
+    
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone {
+    color: var(--black, #000);
+    
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.breadcrumbs a {
+    color: var(--black, #000);
+    
+    font-weight: 300;
+}
+
+.breadcrumbs span {
+    color: rgba(0, 0, 0, 0.70);
+    font-weight: 300;
+}
