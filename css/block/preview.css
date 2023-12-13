@@ -1,5 +1,6 @@
 .preview,
-.feature-page {
+.feature-page,
+.characteristics-page {
     background: #161616;
     min-width: 100%;
     padding-top: 72px;
@@ -9,9 +10,9 @@
 .preview-grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-column-gap: 24px;
-    grid-row-gap: 48px;
+    grid-row-gap: 0px;
 }
 
 .preview__post {
@@ -20,44 +21,44 @@
 }
 
 .preview__post1 {
-    grid-area: 1 / 1 / 5 / 7;
+    grid-area: 1 / 1 / 4 / 7;
     background-color: transparent;
     background-image: url("./../../img/tabs/preview/1.png");
     background-repeat: no-repeat;
-    height: 328px;
+    max-height: 328px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .preview__post2 {
-    grid-area: 1 / 7 / 5 / 13;
+    grid-area: 1 / 7 / 4 / 13;
     padding: 40px;
-    height: 328px;
+    max-height: 328px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .preview__post3 {
-    grid-area: 5 / 1 / 9 / 5;
+    grid-area: 4 / 1 / 7 / 5;
     background-color: transparent;
 }
 .preview__post4 {
-    grid-area: 5 / 5 / 9 / 9;
+    grid-area: 4 / 5 / 7 / 9;
     background-color: transparent;
 }
 .preview__post5 {
-    grid-area: 5 / 9 / 9 / 13;
+    grid-area: 4 / 9 / 7 / 13;
     background-color: transparent;
 }
 
 .preview__post6 {
-    grid-area: 9 / 1 / 13 / 7;
+    grid-area: 7 / 1 / 10 / 7;
     background-color: transparent;
 }
 .preview__post7 {
-    grid-area: 9 / 7 / 13 / 13;
+    grid-area: 7 / 7 / 10 / 13;
     background-color: transparent;
 }
 
@@ -164,20 +165,6 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
-}
-
-.characteristics-page-grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-}
-
-.characteristics-page__row {
-    width: 696px;
-    background-color: #1e1e1e;
-    border: 1px solid black;
-    padding: 10px 0px 10px 24px;
 }
 
 .tab-content {

@@ -1,3 +1,7 @@
+.blog {
+    margin-top: 72px;
+}
+
 .blog__content {
     display: grid;
     place-items: center;

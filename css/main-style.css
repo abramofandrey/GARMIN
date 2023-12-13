@@ -9,6 +9,7 @@
 @import "./block/footer.css";
 @import "./block/preview.css";
 @import "./block/feature-page.css";
+@import "./block/characteristics-page.css";
 
 :root {
     --black: black;
@@ -44,3 +45,10 @@ html, body {
     font-weight: 400;
     line-height: 59px;
 }
+
+@media screen and (min-width: 768px) {
+    /* Стили для устройств с шириной экрана 768px и более */
+    body {
+      overflow-x: hidden; /* Убираем вертикальный скролл */
+    }
+  }

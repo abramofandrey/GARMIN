@@ -22,9 +22,22 @@
     font-weight: 500;
     line-height: normal;
     border: 0.5px solid var(--black, #000);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tab__item-btn--active {
     background: var(--black, #000);
     color: var(--white, var(--color-color-background-primary, #FFF));
+}
+
+/* Стили для активного состояния кнопки */
+.tab__item-btn--active .svg-icon path {
+    fill: var(--white, var(--color-color-background-primary, #FFF));
+}
+
+/* Стили для неактивного состояния кнопки (по умолчанию) */
+.tab__item-btn .svg-icon path {
+    fill: var(--black, #000);
+    transition: fill 0.3s ease;
 }
