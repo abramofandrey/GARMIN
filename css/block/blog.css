@@ -57,11 +57,12 @@ figcaption {
 
 .blog__btn {
     display: flex;
-    padding: 16px 32px;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 16px 32px;
     border-radius: 10px;
+    border: none;
     background: var(--dark-grey, #1e1e1e);
     color: var(--white, var(--color-color-background-primary, #fff));
     line-height: 20px;

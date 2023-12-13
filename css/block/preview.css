@@ -1,0 +1,116 @@
+.preview,
+.feature-page {
+    background: #161616;
+    min-width: 100%;
+    padding: 72px;
+}
+
+.preview-grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 20px;
+}
+
+.preview__post1 {
+    grid-area: 1 / 1 / 5 / 7;
+    background-color: chocolate;
+}
+
+.preview__post2 {
+    grid-area: 1 / 7 / 5 / 13;
+    background-color: blueviolet;
+}
+
+.preview__post3 {
+    grid-area: 5 / 1 / 9 / 5;
+    background-color: cornflowerblue;
+}
+.preview__post4 {
+    grid-area: 5 / 5 / 9 / 9;
+    background-color: cornflowerblue;
+}
+.preview__post5 {
+    grid-area: 5 / 9 / 9 / 13;
+    background-color: cornflowerblue;
+}
+
+.preview__post6 {
+    grid-area: 9 / 1 / 13 / 7;
+    background-color: rgb(212, 139, 44);
+}
+.preview__post7 {
+    grid-area: 9 / 7 / 13 / 13;
+    background-color: cadetblue;
+}
+
+.feature-grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-top: 48px;
+}
+
+.feature__post1 {
+    grid-area: 1 / 1 / 7 / 5;
+    background-color: aqua;
+}
+.feature__post2 {
+    grid-area: 1 / 5 / 7 / 9;
+    background-color: burlywood;
+}
+.feature__post3 {
+    grid-area: 1 / 9 / 7 / 13;
+    background-color: chocolate;
+}
+.feature__post4 {
+    grid-area: 7 / 1 / 13 / 5;
+    background-color: coral;
+}
+.feature__post5 {
+    grid-area: 7 / 5 / 13 / 9;
+    background-color: cyan;
+}
+.feature__post6 {
+    grid-area: 7 / 9 / 13 / 13;
+    background-color: crimson;
+}
+
+.feature-page-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.feature-page__post {
+    width: 451px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.characteristics-page-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+.characteristics-page__row {
+    width: 696px;
+    background-color: #1e1e1e;
+    border: 1px solid black;
+    padding: 10px 0px 10px 24px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}

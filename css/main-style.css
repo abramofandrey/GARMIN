@@ -7,6 +7,7 @@
 @import "./block/order.css";
 @import "./block/contact.css";
 @import "./block/footer.css";
+@import "./block/preview.css";
 
 :root {
     --black: black;
