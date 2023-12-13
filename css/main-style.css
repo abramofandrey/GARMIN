@@ -8,6 +8,7 @@
 @import "./block/contact.css";
 @import "./block/footer.css";
 @import "./block/preview.css";
+@import "./block/feature-page.css";
 
 :root {
     --black: black;
@@ -16,6 +17,7 @@
     --white: #ffffff;
     --gray: #F4F4F4;
     --dark-grey: #1E1E1E;
+    --link-color: #3f97ff;
 }
 
 html, body {

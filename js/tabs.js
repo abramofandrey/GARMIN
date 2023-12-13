@@ -49,3 +49,17 @@ function changeTab(tabId) {
   document.getElementById('tab3Btn').addEventListener('click', function () {
     changeTab('tab3');
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const showMoreButton = document.querySelector('.show-more__btn');
+    const hiddenPosts = document.querySelectorAll('.feature-page__post:nth-child(n+13)');
+
+    showMoreButton.addEventListener('click', function () {
+        hiddenPosts.forEach(post => {
+            post.style.display = 'block';
+        });
+
+        // Дополнительный код, который может быть добавлен для скрытия кнопки после отображения всех постов
+        showMoreButton.style.display = 'none';
+    });
+});

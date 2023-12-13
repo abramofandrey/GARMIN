@@ -37,7 +37,7 @@
     border-radius: 20px;
 }
 
-figure {
+.blog__post figure {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -45,7 +45,7 @@ figure {
     background: var(--grey, #f4f4f4);
 }
 
-figcaption {
+.blog__post figcaption {
     color: var(--black, #000);
     font-family: Commissioner;
     font-size: 16px;
