@@ -29,6 +29,10 @@
     margin-bottom: 40px;
 }
 
+.footer-navigation__item-link {
+    cursor: pointer;
+}
+
 .footer-navigation__item-link,
 .copyright__item {
     color: var(--white, var(--color-color-background-primary, #fff));

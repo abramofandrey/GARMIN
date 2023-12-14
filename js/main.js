@@ -64,6 +64,14 @@ links.forEach(link => {
   };
 });
 
+const footerLinks = document.querySelectorAll(".footer-navigation__item > a");
+footerLinks.forEach(link => {
+  link.onclick = () => {
+    const targetId = link.getAttribute("data-link");
+    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+  };
+});
+
 // Функция для прокрутки страницы вверх
 function scrollToTop() {
   window.scrollTo({
