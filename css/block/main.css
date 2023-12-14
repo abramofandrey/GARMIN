@@ -28,7 +28,10 @@
 
 .main-image__wrapper {
     overflow: hidden;
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 
 .main-image__wrapper img {

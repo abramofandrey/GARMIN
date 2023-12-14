@@ -10,7 +10,6 @@
 @import "./block/preview.css";
 @import "./block/feature-page.css";
 @import "./block/characteristics-page.css";
-/* @import "./block/slick-slider.css"; */
 
 :root {
     --black: black;
