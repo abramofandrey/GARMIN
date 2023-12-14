@@ -26,6 +26,11 @@
     border: 0.5px solid var(--black, #000);
 }
 
+.main-image__wrapper {
+    overflow: hidden;
+    width: 40%;
+}
+
 .main-image__wrapper img {
     width: 450px;
     height: auto;
