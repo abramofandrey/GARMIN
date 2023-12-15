@@ -32,5 +32,13 @@ const sliderImages = new Swiper('.slider__images .swiper-container', { // ище
 	grabCursor: true, // менять иконку курсора
 	thumbs: { // указываем на превью слайдер
 		swiper: sliderThumbs // указываем имя превью слайдера
+	},
+	breakpoints: { // условия для разных размеров окна браузера
+		0: { // при 0px и выше
+			direction: 'horizontal', // горизонтальная прокрутка
+		},
+		768: { // при 768px и выше
+			direction: 'vertical', // вертикальная прокрутка
+		}
 	}
 });

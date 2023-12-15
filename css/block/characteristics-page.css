@@ -18,6 +18,8 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 300;
+    text-transform: uppercase;
+    word-wrap: break-word;
     color: var(--white, var(--color-color-background-primary, #fff));
 }
 
@@ -45,4 +47,23 @@
     list-style-type: disc;
     line-height: 26px;
     color: var(--white, var(--color-color-background-primary, #fff));
+}
+
+@media (max-width: 450px) {
+    .characteristics-page__row {
+        min-width: 180px;
+        align-self: stretch;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    
+    .characteristics-page__row p {
+        overflow-x:hidden;
+        word-wrap: break-word;
+    }
+
+    .characteristics-page__row:nth-child(odd),
+    .characteristics-page__row:nth-child(even) {
+        padding: 10px 15px 10px 15px;
+    }
 }

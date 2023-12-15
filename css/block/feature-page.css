@@ -77,3 +77,21 @@
 .feature-page__btn:hover {
     cursor: pointer;
 }
+
+@media (max-width: 450px) {
+    .feature-page-grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-page__post-title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .feature-page__post-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

@@ -23,11 +23,12 @@ function changeTab(tabId) {
   });
 }
 
-document.querySelectorAll('#tab1Btn .svg-icon path').forEach(path => {
-  path.style.fill = '#fff';
-});
+// Убираем активный класс здесь, чтобы он не добавлялся по умолчанию
+// document.querySelectorAll('#tab1Btn .svg-icon path').forEach(path => {
+//   path.style.fill = '#fff';
+// });
 
-changeTab('tab1');
+// changeTab('tab1');
 
 document.getElementById('tab1Btn').addEventListener('click', function () {
   changeTab('tab1');
@@ -79,5 +80,3 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
-
-document.getElementById('scrollToTopButton').addEventListener('click', scrollToTop);

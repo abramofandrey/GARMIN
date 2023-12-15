@@ -1,7 +1,5 @@
 .tabs-container {
-    padding-bottom: 32px;
-}
-.tabs__list {
+    margin-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,21 +21,50 @@
     line-height: normal;
     border: 0.5px solid var(--black, #000);
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 .tab__item-btn--active {
     background: var(--black, #000);
-    color: var(--white, var(--color-color-background-primary, #FFF));
+    color: var(--white, var(--color-color-background-primary, #fff));
 }
 
-/* Стили для активного состояния кнопки */
 .tab__item-btn--active .svg-icon path {
-    fill: var(--white, var(--color-color-background-primary, #FFF));
+    fill: var(--white, var(--color-color-background-primary, #fff));
 }
 
-/* Стили для неактивного состояния кнопки (по умолчанию) */
 .tab__item-btn .svg-icon path {
     fill: var(--black, #000);
     transition: fill 0.3s ease;
+}
+
+.tab__item-btn:hover {
+    background: var(--black, #000);
+    color: var(--white, var(--color-color-background-primary, #fff));
+}
+
+.tab__item-btn:hover .svg-icon path {
+    fill: var(--white, var(--color-color-background-primary, #fff));
+}
+
+@media (max-width: 450px) {
+    .tabs-container {
+        width: 440px;
+        overflow-x: auto;
+        gap: 8px;
+        margin-bottom: 0px;
+    }
+
+    .tabs-container::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .tab__item-btn {
+        width: 153px;
+        padding: 10px 0px;
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
